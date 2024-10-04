@@ -8,7 +8,7 @@
 body {
     font-family: 'Arial', sans-serif;
     color: white;
-    background: url('C:\Users\Teacher\Documents\Respiratory\Porfolio-tetris.github.io\Team-project.jpg') no-repeat center center fixed;
+    background: url("Asset/image/Team-project.jpg") no-repeat center center fixed;
     background-size: cover;
     height: 100vh;
     display: flex;
