@@ -1,25 +1,10 @@
-let display = document.getElementById("display");
+// Function to handle the download button click
+document.getElementById("play-button").addEventListener("click", function() {
+    alert("You are about to download the Tetris Game by Alwen T. Casagan!");
 
-// Function to append a character to the display
-function appendToDisplay(value) {
-    display.value += value;
-}
+    // Change button text after clicking
+    this.innerHTML = 'Downloading...';
 
-// Function to clear the display
-function clearDisplay() {
-    display.value = "";
-}
-
-// Function to delete the last character
-function deleteLast() {
-    display.value = display.value.slice(0, -1);
-}
-
-// Function to calculate the result
-function calculate() {
-    try {
-        display.value = eval(display.value);
-    } catch (error) {
-        display.value = "Error";
-    }
-}
+    // Disable the button after clicking
+    this.disabled = true;
+});
